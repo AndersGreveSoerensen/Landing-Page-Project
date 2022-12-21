@@ -1,3 +1,10 @@
+:root {
+    --theme-dark: #1f2937;
+    --theme-blue: #3882f6;
+    --theme-grey: #E5E7EB;
+    --theme-white: white;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,5 +13,139 @@
 
 body {
     min-width: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* STYLING HEADER */
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--theme-dark);
+    color: var(--theme-white);
+    padding-top: 10px;
+}
+
+.header-top-container {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    flex: 0 1 700px;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+    /* border: 1px solid white; */
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+header ul li {
+    margin-left: 10px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+
+.img-placeholder {
+    /* width: 300px; */
+    background-color: grey;
+    color: var(--theme-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 350px;
+}
+
+.header-text {
+    /* width: 250px; */
+    flex: 1 1 350px;
+    /* padding-right: 15px; */
+    color: var(--theme-white);
+}
+
+.header-text button {
+    padding: 5px 15px;
+    background-color: var(--theme-blue);
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: var(--theme-white);
+}
+
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+    min-height: 100px; 
+    column-gap: 20px;
+    padding-bottom: 60px;
+}
+
+/* STYLING MAIN SECTION */
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 40px 0;
+}
+
+.box-container-container {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 75px;
+}
+
+.box-container {
+    display: flex;
+    column-gap: 40px;;
+    /* border: 1px solid red; */
+    justify-content: center;
+    flex: 0 1 800px;
+}
+
+.box {
+    /* height: 100px; */
+    /* width: 110px; */
+    border: 3px solid var(--theme-blue);
+    border-radius: 10px;
+    flex: 1 1 125px;
+}
+
+.box1, .box2, .box3, .box4 {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* border: 2px solid yellow; */
+    flex: 0 1 125px
+}
+
+.box-container p {
+    font-size: 14px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+/* STYLING QUOTE SECTION */
+
+.quote-section {
+    background-color: var(--theme-grey);
+    height: 200px;
 }
 
