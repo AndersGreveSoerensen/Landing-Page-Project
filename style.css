@@ -145,7 +145,26 @@ header ul li {
 /* STYLING QUOTE SECTION */
 
 .quote-section {
+    display: flex;
+    justify-content: center;
     background-color: var(--theme-grey);
     height: 200px;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-container div {
+    width: 500px;
+}
+
+.quote-container div:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
 }
 
